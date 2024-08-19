@@ -112,9 +112,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://stthamizhan-renderst.koyeb.app/".format(FQDN)
+    URL = "https://deep-dolly-nn86109965-81aa826a.koyeb.app/".format(FQDN)
 else:
-    URL = "https://stthamizhan-renderst.koyeb.app/".format(FQDN)
+    URL = "https://deep-dolly-nn86109965-81aa826a.koyeb.app/".format(FQDN)
 
 
 
