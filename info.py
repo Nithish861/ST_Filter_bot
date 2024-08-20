@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '14703502'))
 API_HASH = environ.get('API_HASH', 'd3c330a6464ee0b3a854f0b9fa9f0920')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6679409655:AAGOTOraeacfmdd4jCtXyAkVp7medXb8Hkw")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6679409655:AAG9sWkALLNzhVt8wRgiBDjerhFc98zdn9k")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -48,8 +48,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Nithish2003")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('Verify', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL')
+VERIFY = bool(environ.get('Verify', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL',)
 SHORTLINK_API = environ.get('SHORTLINK_API',)
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
