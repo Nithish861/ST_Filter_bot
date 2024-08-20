@@ -112,9 +112,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://deep-dolly-nn86109965-81aa826a.koyeb.app/".format(FQDN)
+    URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
 else:
-    URL = "https://deep-dolly-nn86109965-81aa826a.koyeb.app/".format(FQDN)
+    URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
 
 
 
