@@ -48,9 +48,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Nithish2003")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('Verify', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL','tinyfy.in')
-SHORTLINK_API = environ.get('SHORTLINK_API','212375e7b697c772ad6e0eb7830d51f6e4d98ae8')
+VERIFY = bool(environ.get('Verify', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL',)
+SHORTLINK_API = environ.get('SHORTLINK_API',)
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -109,7 +109,7 @@ if 'DYNO' in environ:
     APP_NAME = str(getenv('APP_NAME'))
 
 else:
-    ON_HEROKU = False
+    ON_HEROKU = True
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
     URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
