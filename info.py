@@ -112,9 +112,9 @@ else:
     ON_HEROKU = True
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
+    URL = "https://www.tg-x-server3.workers.dev/".format(FQDN)
 else:
-    URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
+    URL = "https://www.tg-x-server3.workers.dev/".format(FQDN)
 
 
 
