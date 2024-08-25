@@ -58,7 +58,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/NHMovieofficial2')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/NHMovieofficial2')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/NHMovieofficial2')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/st_movie_upadate/1958')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Member')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001607663783'))
@@ -102,19 +102,19 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'STâœ“Thamizhan'))
+name = str(environ.get('name', 'STÃ¢Å“â€œThamizhan'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
     APP_NAME = str(getenv('APP_NAME'))
 
 else:
-    ON_HEROKU = True
+    ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://www.tg-x-server3.workers.dev/".format(FQDN)
+    URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
 else:
-    URL = "https://www.tg-x-server3.workers.dev/".format(FQDN)
+    URL = "https://gray-powerminnow-rat.toystack.dev/".format(FQDN)
 
 
 
