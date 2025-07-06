@@ -1,1 +1,10 @@
-
+FROM python:3.13.15-slim-buster
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+RUN mkdir /Filter Bot - @UHD_Tamil
+WORKDIR /Filter Bot - @UHD_Tamil
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
